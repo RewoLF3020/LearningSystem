@@ -1,3 +1,4 @@
+import datetime
 from django.db import models
 from django.contrib.auth.models import User
 from catalog.models import Product
@@ -22,6 +23,7 @@ class LessonViewInfo(models.Model):
                               default=LessonStatusEnum.NOT_VIEWED,
                               max_length=32)
     view_time = models.PositiveIntegerField(default=0)
+    last_view_datetime = models.DateTimeField(default=datetime.datetime.now)
     
     class Meta:
         unique_together = ('lesson', 'user')
