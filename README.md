@@ -34,6 +34,7 @@
 
 1. Установите Python и Django на своем компьютере, если они еще не установлены.
 2. Скачайте проект с репозитория.
+`git clone https://github.com/RewoLF3020/LearningSystem.git`
 3. Перейдите в папку проекта и установите зависимости, выполнив команду `pip install -r requirements.txt`.
 4. Выполните миграции базы данных с помощью команды `python manage.py migrate`.
 5. Запустите сервер разработки с помощью команды `python manage.py runserver`.
